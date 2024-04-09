@@ -14,6 +14,13 @@ import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './views/home/home.component';
 import { EstadoCrudComponent } from './views/estado-crud/estado-crud.component';
 import { CidadeCrudComponent } from './views/cidade-crud/cidade-crud.component';
+import { EstadoCreateComponent } from './components/estado/estado-create/estado-create.component';
+import { MatButtonModule } from '@angular/material/button'
+import { MatSnackBarModule } from '@angular/material/snack-bar'
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -23,7 +30,8 @@ import { CidadeCrudComponent } from './views/cidade-crud/cidade-crud.component';
     NavComponent,
     HomeComponent,
     EstadoCrudComponent,
-    CidadeCrudComponent
+    CidadeCrudComponent,
+    EstadoCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +40,13 @@ import { CidadeCrudComponent } from './views/cidade-crud/cidade-crud.component';
     MatToolbarModule,
     MatListModule,
     MatSidenavModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
