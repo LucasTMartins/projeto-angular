@@ -20,4 +20,8 @@ export class EstadoService {
   create(estado: Estado): Observable<Estado> {
     return this.http.post<Estado>(this.baseUrl, estado)
   }
+
+  read(): Observable<Estado[]> {
+    return this.http.get<Estado[]>(this.baseUrl + "/all")
+  }
 }
