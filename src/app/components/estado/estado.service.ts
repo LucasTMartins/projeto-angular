@@ -24,4 +24,14 @@ export class EstadoService {
   read(): Observable<Estado[]> {
     return this.http.get<Estado[]>(this.baseUrl + "/all")
   }
+
+  readById(id: string): Observable<Estado>{
+    const url = this.baseUrl + "/" + id;
+    return this.http.get<Estado>(url);
+  }
+
+  update(estado: Estado): Observable<Estado>{
+    const url = this.baseUrl;
+    return this.http.put<Estado>(url, estado);
+  }
 }

@@ -5,6 +5,7 @@ import { HomeComponent } from './views/home/home.component';
 import { EstadoCrudComponent } from './views/estado-crud/estado-crud.component';
 import { EstadoCreateComponent } from './components/estado/estado-create/estado-create.component';
 import { CidadeCrudComponent } from './views/cidade-crud/cidade-crud.component';
+import { EstadoUpdateComponent } from './components/estado/estado-update/estado-update.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: "cidades",
     component: CidadeCrudComponent
+  },
+  {
+    path: "estados/update/:id",
+    component: EstadoUpdateComponent
   }
 ];
 
