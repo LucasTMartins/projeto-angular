@@ -27,6 +27,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { EstadoUpdateComponent } from './components/estado/estado-update/estado-update.component';
+import { EstadoDeleteComponent } from './components/estado/estado-delete/estado-delete.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { EstadoUpdateComponent } from './components/estado/estado-update/estado-
     EstadoCreateComponent,
     EstadoReadComponent,
     EstadoRead2Component,
-    EstadoUpdateComponent
+    EstadoUpdateComponent,
+    EstadoDeleteComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { EstadoCrudComponent } from './views/estado-crud/estado-crud.component';
 import { EstadoCreateComponent } from './components/estado/estado-create/estado-create.component';
 import { CidadeCrudComponent } from './views/cidade-crud/cidade-crud.component';
 import { EstadoUpdateComponent } from './components/estado/estado-update/estado-update.component';
+import { EstadoDeleteComponent } from './components/estado/estado-delete/estado-delete.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: "estados/update/:id",
     component: EstadoUpdateComponent
+  },
+  {
+    path: "estados/delete/:id",
+    component: EstadoDeleteComponent
   }
 ];
 
